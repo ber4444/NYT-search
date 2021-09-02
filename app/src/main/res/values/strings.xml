@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NYT Search</string>
+    <string name="title_news">News</string>
+    <string name="breaking">Breaking</string>
+    <string name="search">Search</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="retry">Retry</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_bookmarks">No bookmarks</string>
+    <string name="no_results_found">No results found</string>
+    <string name="search_hint">Search term (e.g. \"art\")</string>
+</resources>

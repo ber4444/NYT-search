@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<navigation
+    android:id="@+id/nav_graph"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/newsListFragment">
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.example.gabor.fragments.NewsListFragment"
+        android:label="NewsListFragment">
+        <action
+            android:id="@+id/list_to_detail"
+            app:destination="@id/detailFragment">
+            <argument
+                android:name="articleText"
+                app:argType="string"/>
+            <argument
+                android:name="imageUrl"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <dialog
+        android:id="@+id/detailFragment"
+        android:name="com.example.gabor.fragments.DetailFragment"
+        android:label="DetailFragment">
+        <argument
+            android:name="articleText"
+            app:argType="string"/>
+        <argument
+            android:name="imageUrl"
+            app:argType="string"/>
+        <action app:destination="@id/newsListFragment"
+            android:id="@+id/back_to_list" />
+    </dialog>
+
+</navigation>
